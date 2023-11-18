@@ -15,7 +15,7 @@ Follow these steps to set up and run the Speak to AI app on your local machine.
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/speak-to-ai.git
+   git clone https://github.com/shayan6/speak-to-ai.git
    
 2. Navigate to the project directory:
 
