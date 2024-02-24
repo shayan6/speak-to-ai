@@ -1,8 +1,6 @@
 
 import React, { useState } from 'react';
 import OpenAI from 'openai';
-// import { configDotenv } from 'dotenv';
-// configDotenv();
 
 const OpenAIComponent = ({ text }) => {
   const [outputText, setOutputText] = useState('');
@@ -13,7 +11,7 @@ const OpenAIComponent = ({ text }) => {
     }
 
     try {
-      const openai = new OpenAI({ apiKey: process.env.OPENAI_API_KEY, dangerouslyAllowBrowser: true });
+      const openai = new OpenAI({ apiKey: process.env.REACT_APP_OPENAI_API_KEY, dangerouslyAllowBrowser: true });
       const response = await openai.chat.completions.create({
         messages: [{ role: 'user', content: text }],
         model: 'gpt-3.5-turbo',
